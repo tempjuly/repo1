@@ -1,5 +1,8 @@
 name: workflow03
 on: [push]
+defaults:
+  run: 
+    shell: bash
 
 jobs:
   jobs01:
@@ -13,7 +16,7 @@ jobs:
     steps:
         - name: unix commands
           run: |
-            ls -lta
+            ls -lta 
             pwd
             echo $GIHUB_SHA
             echo $GIHUB_REPOSITORY
