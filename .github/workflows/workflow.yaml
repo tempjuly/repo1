@@ -12,7 +12,7 @@ jobs:
             node -v
             npm -v
 
-  run-shell-commands2:
+  run-shell-commands1:
     runs-on: ubuntu-latest
     steps: 
         - name: firstJob
@@ -21,7 +21,7 @@ jobs:
           run: | 
             node -v
             npm -v
-  run-shell-commands4:
+  run-shell-commands2:
     runs-on: ubuntu-latest
     steps: 
         - name: firstJob
@@ -31,20 +31,4 @@ jobs:
             node -v
             npm -v  
             run-shell-commands:
-              runs-on: ubuntu-latest
-              steps: 
-                  - name: firstJob
-                    run: echo "The first Job"
-                  - name: multi-line-Jobs
-                    run: | 
-                      node -v
-                      npm -v
-  run-shell-commands3:
-    runs-on: ubuntu-latest
-    steps: 
-        - name: firstJob
-          run: echo "The first Job"
-        - name: multi-line-Jobs
-          run: | 
-            node -v
-            npm -v                                            
+              
