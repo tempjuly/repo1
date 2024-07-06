@@ -4,6 +4,7 @@ on: [push]
 jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
+    needs: run-shell-commands1
     steps: 
         - name: firstJob
           run: echo "The first Job"
