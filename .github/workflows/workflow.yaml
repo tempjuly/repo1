@@ -1,0 +1,9 @@
+name: githubaction
+on: [push]
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps: 
+        - name: echo
+          run: echo "test a job"
