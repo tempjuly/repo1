@@ -5,5 +5,9 @@ jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
     steps: 
-        - name: echo
-          run: echo "test a job"
+        - name: firstJob
+          run: echo "The first Job"
+        - name: multi-line-Jobs
+          run: | 
+            node -v
+            npm -v
