@@ -2,7 +2,7 @@ name: githubaction
 on: [push]
 
 jobs:
-  run-shell-commands:
+  run-shell-commands0:
     runs-on: ubuntu-latest
     needs: run-shell-commands1
     steps: 
@@ -32,4 +32,33 @@ jobs:
           run: | 
             node -v
             npm -v  
-              
+  run-shell-commands3:
+    runs-on: ubuntu-latest
+    needs: run-shell-commands1
+    steps: 
+        - name: firstJob
+          run: echo "The first Job"
+        - name: multi-line-Jobs
+          run: | 
+            node -v
+            npm -v                
+  run-shell-commands4:
+    runs-on: ubuntu-latest
+    needs: run-shell-commands3
+    steps: 
+        - name: firstJob
+          run: echo "The first Job"
+        - name: multi-line-Jobs
+          run: | 
+            node -v
+            npm -v  
+  run-shell-commands5:
+    runs-on: ubuntu-latest
+    needs: run-shell-commands4
+    steps: 
+        - name: firstJob
+          run: echo "The first Job"
+        - name: multi-line-Jobs
+          run: | 
+            node -v
+            npm -v                          
