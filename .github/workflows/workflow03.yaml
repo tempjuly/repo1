@@ -5,10 +5,11 @@ jobs:
   jobs01:
     runs-on: ubuntu-latest
     steps:
-        - name: step 01
+        - name: step01
           run: echo " check runs"
   jobs02:
     runs-on: ubuntu-latest
+    needs: jobs01
     steps:
         - name: unix commands
           run: |
