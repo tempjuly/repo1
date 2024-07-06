@@ -1,4 +1,4 @@
-name: workflow01
+name: workflow02
 on: [push]
 
 jobs:
