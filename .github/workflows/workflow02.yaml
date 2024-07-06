@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: job1
-        run: echo "job1"  
+        run: echo "job01"  
   job02:
     runs-on: ubuntu-latest
     steps:
       - name: job2 
-        run: echo "job2"     
+        run: echo "job02"     
