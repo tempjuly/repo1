@@ -1,0 +1,9 @@
+name: workflow01
+on: [push]
+
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job1
+        run: echo "job1"  
