@@ -15,5 +15,7 @@ jobs:
           run: |
             ls -lta
             pwd
+            echo $GIHUB_SHA
+            echo $GIHUB_REPOSITORY
       
 
