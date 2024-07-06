@@ -54,7 +54,7 @@ jobs:
             npm -v  
   run-shell-commands5:
     runs-on: ubuntu-latest
-    needs: [run-shell-commands4, run-shell-commands3, run-shell-commands2]
+    needs: [run-shell-commands4, run-shell-commands3, run-shell-commands2, run-shell-commands0, run-shell-commands1]
     steps: 
         - name: firstJob
           run: echo "The first Job"
